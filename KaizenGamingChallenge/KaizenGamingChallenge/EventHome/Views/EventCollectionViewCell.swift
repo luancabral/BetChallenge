@@ -38,13 +38,6 @@ final class EventCollectionViewCell: UICollectionViewCell {
         return favoriteImageView
     }()
     
-//    private let favoriteImageView: UIButton = {
-//        let sportImageView = UIButton(frame: .zero)
-//        sportImageView.setImage(UIImage(systemName: "start"), for: .normal)
-//        return sportImageView
-//    }()
-
-    
     private let firstOpponent: UILabel = {
         let label = UILabel()
         label.textColor = .black

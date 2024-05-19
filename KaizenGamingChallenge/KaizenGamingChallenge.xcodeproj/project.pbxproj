@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				0F42B2B82BF9B33400967F0C /* EventHome */,
-				0F4DFCBC2BF8169700033D09 /* DominLayer */,
+				0F4DFCBC2BF8169700033D09 /* ServiceLayer */,
 				0F0433252BF7CD7000406078 /* Supporting */,
 				0F0433032BF7CC4300406078 /* Info.plist */,
 			);
@@ -199,12 +199,12 @@
 			path = EventHome;
 			sourceTree = "<group>";
 		};
-		0F4DFCBC2BF8169700033D09 /* DominLayer */ = {
+		0F4DFCBC2BF8169700033D09 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
 				0F4DFCBD2BF816A000033D09 /* DataModel */,
 			);
-			path = DominLayer;
+			path = ServiceLayer;
 			sourceTree = "<group>";
 		};
 		0F4DFCBD2BF816A000033D09 /* DataModel */ = {
