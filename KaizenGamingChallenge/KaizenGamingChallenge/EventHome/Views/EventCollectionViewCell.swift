@@ -18,25 +18,24 @@ final class EventCollectionViewCell: UICollectionViewCell {
     
     weak var delegate: EventCollectionViewCellDelegate?
     
-    private lazy var countDown: UILabel = {
+    private let countDown: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.numberOfLines = 1
+        label.text = "HH:mm:ss"
         label.font = .systemFont(ofSize: 14)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    private lazy var favoriteImageView: UIImageView = {
-        let sportImageView = UIImageView()
-        sportImageView.image = UIImage(systemName: "star")
-        sportImageView.tintColor = .yellow
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        sportImageView.isUserInteractionEnabled = true
-        sportImageView.addGestureRecognizer(tapGesture)
-        sportImageView.translatesAutoresizingMaskIntoConstraints = false
-        return sportImageView
+    private let favoriteImageView: UIImageView = {
+        let favoriteImageView = UIImageView()
+        favoriteImageView.image = UIImage(systemName: "star")
+        favoriteImageView.tintColor = .yellow
+        favoriteImageView.isUserInteractionEnabled = true
+        favoriteImageView.translatesAutoresizingMaskIntoConstraints = false
+        return favoriteImageView
     }()
     
 //    private let favoriteImageView: UIButton = {
@@ -66,22 +65,35 @@ final class EventCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    override func prepareForReuse() {
+        countDown.text = "HH:mm:ss"
+    }
+    
     func setup(activeEvent: EventModel) {
         self.activeEvent = activeEvent
-        favoriteImageView.image = activeEvent.isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
-        favoriteImageView.tintColor = activeEvent.isFavorite ? .yellow : .gray
-        let match = activeEvent.match.components(separatedBy: "-")
+        setupTimer(startTime: activeEvent.startTime)
+        setupFavoriteImageView(activeEvent.isFavorite)
+        setupOpponentLabel(with: activeEvent.match)
+
+        self.backgroundColor = UIColor(red: 29, green: 32, blue: 37)
+        setupView()
+    }
+    
+    private func setupFavoriteImageView(_ isFavorite: Bool) {
+        favoriteImageView.image = isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
+        favoriteImageView.tintColor = isFavorite ? .yellow : .gray
+        setupFavoriteTap()
+    }
+    
+    private func setupOpponentLabel(with match: String) {
+        let match = match.components(separatedBy: "-")
         if let opponent1 = match.first, let opponent2 = match.last {
             firstOpponent.text = opponent1
             secondOpponent.text = opponent2
         }
-
-        self.backgroundColor = UIColor(red: 29, green: 32, blue: 37)
-        setupTimer(startTime: activeEvent.startTime)
-        setupView()
     }
     
-    func setupTimer(startTime: Int) {
+    private func setupTimer(startTime: Int) {
         self.timerClass?.timerInvlidate()
         self.timerClass = TimerManager(targetDate: startTime)
         timerClass?.startCountDown(completion: { [weak self] remaningTime in
@@ -90,8 +102,13 @@ final class EventCollectionViewCell: UICollectionViewCell {
         })
     }
     
+    private func setupFavoriteTap() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        favoriteImageView.addGestureRecognizer(tapGesture)
+    }
+    
     @objc
-    func handleTap() {
+    private func handleTap() {
         guard let activeEvent = activeEvent else { return }
         delegate?.toogleFavorite(activeEvent: activeEvent)
     }

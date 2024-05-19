@@ -30,8 +30,12 @@ final class EventTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         collectionView.backgroundColor = UIColor(red: 29, green: 32, blue: 37)
-        setupView()
         collectionView.dataSource = self
+    }
+    
+    override func layoutSubviews() {
+        contentView.addSubview(collectionView)
+        collectionView.frame = contentView.frame
     }
     
     @available(*, unavailable)
@@ -57,20 +61,5 @@ extension EventTableViewCell: UICollectionViewDataSource {
         cell.setup(activeEvent: event)
         cell.delegate = self.collectionDelegate
         return cell
-    }
-}
-
-extension EventTableViewCell: ViewCode{
-    func buildHierarchy() {
-        contentView.addSubview(collectionView)
-    }
-    
-    func buildConstratins() {
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
-        ])
     }
 }
