@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0432F62BF7CC3E00406078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0432F52BF7CC3E00406078 /* AppDelegate.swift */; };
+		0F0432F82BF7CC3E00406078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0432F72BF7CC3E00406078 /* SceneDelegate.swift */; };
+		0F0432FA2BF7CC3E00406078 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0432F92BF7CC3E00406078 /* UpcomingEventsViewController.swift */; };
+		0F0432FF2BF7CC4300406078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0432FE2BF7CC4300406078 /* Assets.xcassets */; };
+		0F0433022BF7CC4300406078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0433002BF7CC4300406078 /* LaunchScreen.storyboard */; };
+		0F04330D2BF7CC4300406078 /* KaizenGamingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04330C2BF7CC4300406078 /* KaizenGamingChallengeTests.swift */; };
+		0F0433172BF7CC4300406078 /* KaizenGamingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0433162BF7CC4300406078 /* KaizenGamingChallengeUITests.swift */; };
+		0F0433192BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0433182BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift */; };
+		0F0433282BF7CF9000406078 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0433272BF7CF9000406078 /* ViewCode.swift */; };
+		0F04332B2BF7D23300406078 /* SportNameHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04332A2BF7D23300406078 /* SportNameHeaderView.swift */; };
+		0F04332D2BF7DC9200406078 /* UpcomingEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04332C2BF7DC9200406078 /* UpcomingEventsPresenter.swift */; };
+		0F0433302BF7E7BA00406078 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04332F2BF7E7BA00406078 /* Array+Extension.swift */; };
+		0F0433322BF7F37700406078 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0433312BF7F37700406078 /* EventTableViewCell.swift */; };
+		0F42B2B52BF9AFE200967F0C /* JSONModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42B2B42BF9AFE200967F0C /* JSONModelFactory.swift */; };
+		0F42B2B72BF9B0C700967F0C /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F42B2B62BF9B0C700967F0C /* mock.json */; };
+		0F4DFCB92BF808E500033D09 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DFCB82BF808E500033D09 /* EventCollectionViewCell.swift */; };
+		0F4DFCBB2BF8138A00033D09 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DFCBA2BF8138A00033D09 /* UIColor+Extension.swift */; };
+		0F4DFCBF2BF816BA00033D09 /* EventListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DFCBE2BF816BA00033D09 /* EventListModel.swift */; };
+		0F4DFCC32BF84AD000033D09 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4DFCC22BF84AD000033D09 /* EventModel.swift */; };
+		0FB4DCDA2BF8D1D700A21104 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB4DCD92BF8D1D700A21104 /* TimerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F0433092BF7CC4300406078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F0432EA2BF7CC3E00406078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F0432F12BF7CC3E00406078;
+			remoteInfo = KaizenGamingChallenge;
+		};
+		0F0433132BF7CC4300406078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F0432EA2BF7CC3E00406078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F0432F12BF7CC3E00406078;
+			remoteInfo = KaizenGamingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F0432F22BF7CC3E00406078 /* KaizenGamingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaizenGamingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0432F52BF7CC3E00406078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F0432F72BF7CC3E00406078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0F0432F92BF7CC3E00406078 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
+		0F0432FE2BF7CC4300406078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F0433012BF7CC4300406078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F0433032BF7CC4300406078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F0433082BF7CC4300406078 /* KaizenGamingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaizenGamingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F04330C2BF7CC4300406078 /* KaizenGamingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingChallengeTests.swift; sourceTree = "<group>"; };
+		0F0433122BF7CC4300406078 /* KaizenGamingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaizenGamingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0433162BF7CC4300406078 /* KaizenGamingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingChallengeUITests.swift; sourceTree = "<group>"; };
+		0F0433182BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F0433272BF7CF9000406078 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		0F04332A2BF7D23300406078 /* SportNameHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportNameHeaderView.swift; sourceTree = "<group>"; };
+		0F04332C2BF7DC9200406078 /* UpcomingEventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsPresenter.swift; sourceTree = "<group>"; };
+		0F04332F2BF7E7BA00406078 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		0F0433312BF7F37700406078 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		0F42B2B42BF9AFE200967F0C /* JSONModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModelFactory.swift; sourceTree = "<group>"; };
+		0F42B2B62BF9B0C700967F0C /* mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		0F4DFCB82BF808E500033D09 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F4DFCBA2BF8138A00033D09 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0F4DFCBE2BF816BA00033D09 /* EventListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListModel.swift; sourceTree = "<group>"; };
+		0F4DFCC22BF84AD000033D09 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		0FB4DCD92BF8D1D700A21104 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F0432EF2BF7CC3E00406078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F0433052BF7CC4300406078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F04330F2BF7CC4300406078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F0432E92BF7CC3E00406078 = {
+			isa = PBXGroup;
+			children = (
+				0F0432F42BF7CC3E00406078 /* KaizenGamingChallenge */,
+				0F04330B2BF7CC4300406078 /* KaizenGamingChallengeTests */,
+				0F0433152BF7CC4300406078 /* KaizenGamingChallengeUITests */,
+				0F0432F32BF7CC3E00406078 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F0432F32BF7CC3E00406078 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F0432F22BF7CC3E00406078 /* KaizenGamingChallenge.app */,
+				0F0433082BF7CC4300406078 /* KaizenGamingChallengeTests.xctest */,
+				0F0433122BF7CC4300406078 /* KaizenGamingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F0432F42BF7CC3E00406078 /* KaizenGamingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				0F42B2B82BF9B33400967F0C /* EventHome */,
+				0F4DFCBC2BF8169700033D09 /* DominLayer */,
+				0F0433252BF7CD7000406078 /* Supporting */,
+				0F0433032BF7CC4300406078 /* Info.plist */,
+			);
+			path = KaizenGamingChallenge;
+			sourceTree = "<group>";
+		};
+		0F04330B2BF7CC4300406078 /* KaizenGamingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F04330C2BF7CC4300406078 /* KaizenGamingChallengeTests.swift */,
+			);
+			path = KaizenGamingChallengeTests;
+			sourceTree = "<group>";
+		};
+		0F0433152BF7CC4300406078 /* KaizenGamingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0F0433162BF7CC4300406078 /* KaizenGamingChallengeUITests.swift */,
+				0F0433182BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift */,
+			);
+			path = KaizenGamingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		0F0433252BF7CD7000406078 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0F04332E2BF7E7A900406078 /* Extensions */,
+				0F0433262BF7CF7F00406078 /* CommonProtocols */,
+				0F0432FE2BF7CC4300406078 /* Assets.xcassets */,
+				0F0433002BF7CC4300406078 /* LaunchScreen.storyboard */,
+				0F0432F52BF7CC3E00406078 /* AppDelegate.swift */,
+				0F0432F72BF7CC3E00406078 /* SceneDelegate.swift */,
+				0FB4DCD92BF8D1D700A21104 /* TimerManager.swift */,
+				0F42B2B42BF9AFE200967F0C /* JSONModelFactory.swift */,
+				0F42B2B62BF9B0C700967F0C /* mock.json */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		0F0433262BF7CF7F00406078 /* CommonProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				0F0433272BF7CF9000406078 /* ViewCode.swift */,
+			);
+			path = CommonProtocols;
+			sourceTree = "<group>";
+		};
+		0F0433292BF7D21300406078 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F0432F92BF7CC3E00406078 /* UpcomingEventsViewController.swift */,
+				0F04332A2BF7D23300406078 /* SportNameHeaderView.swift */,
+				0F0433312BF7F37700406078 /* EventTableViewCell.swift */,
+				0F4DFCB82BF808E500033D09 /* EventCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F04332E2BF7E7A900406078 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F04332F2BF7E7BA00406078 /* Array+Extension.swift */,
+				0F4DFCBA2BF8138A00033D09 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F42B2B82BF9B33400967F0C /* EventHome */ = {
+			isa = PBXGroup;
+			children = (
+				0F04332C2BF7DC9200406078 /* UpcomingEventsPresenter.swift */,
+				0F0433292BF7D21300406078 /* Views */,
+			);
+			path = EventHome;
+			sourceTree = "<group>";
+		};
+		0F4DFCBC2BF8169700033D09 /* DominLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0F4DFCBD2BF816A000033D09 /* DataModel */,
+			);
+			path = DominLayer;
+			sourceTree = "<group>";
+		};
+		0F4DFCBD2BF816A000033D09 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F4DFCBE2BF816BA00033D09 /* EventListModel.swift */,
+				0F4DFCC22BF84AD000033D09 /* EventModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F0432F12BF7CC3E00406078 /* KaizenGamingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F04331C2BF7CC4300406078 /* Build configuration list for PBXNativeTarget "KaizenGamingChallenge" */;
+			buildPhases = (
+				0F0432EE2BF7CC3E00406078 /* Sources */,
+				0F0432EF2BF7CC3E00406078 /* Frameworks */,
+				0F0432F02BF7CC3E00406078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaizenGamingChallenge;
+			productName = KaizenGamingChallenge;
+			productReference = 0F0432F22BF7CC3E00406078 /* KaizenGamingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F0433072BF7CC4300406078 /* KaizenGamingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F04331F2BF7CC4300406078 /* Build configuration list for PBXNativeTarget "KaizenGamingChallengeTests" */;
+			buildPhases = (
+				0F0433042BF7CC4300406078 /* Sources */,
+				0F0433052BF7CC4300406078 /* Frameworks */,
+				0F0433062BF7CC4300406078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F04330A2BF7CC4300406078 /* PBXTargetDependency */,
+			);
+			name = KaizenGamingChallengeTests;
+			productName = KaizenGamingChallengeTests;
+			productReference = 0F0433082BF7CC4300406078 /* KaizenGamingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0F0433112BF7CC4300406078 /* KaizenGamingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F0433222BF7CC4300406078 /* Build configuration list for PBXNativeTarget "KaizenGamingChallengeUITests" */;
+			buildPhases = (
+				0F04330E2BF7CC4300406078 /* Sources */,
+				0F04330F2BF7CC4300406078 /* Frameworks */,
+				0F0433102BF7CC4300406078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F0433142BF7CC4300406078 /* PBXTargetDependency */,
+			);
+			name = KaizenGamingChallengeUITests;
+			productName = KaizenGamingChallengeUITests;
+			productReference = 0F0433122BF7CC4300406078 /* KaizenGamingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F0432EA2BF7CC3E00406078 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0F0432F12BF7CC3E00406078 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					0F0433072BF7CC4300406078 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0F0432F12BF7CC3E00406078;
+					};
+					0F0433112BF7CC4300406078 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0F0432F12BF7CC3E00406078;
+					};
+				};
+			};
+			buildConfigurationList = 0F0432ED2BF7CC3E00406078 /* Build configuration list for PBXProject "KaizenGamingChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F0432E92BF7CC3E00406078;
+			productRefGroup = 0F0432F32BF7CC3E00406078 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F0432F12BF7CC3E00406078 /* KaizenGamingChallenge */,
+				0F0433072BF7CC4300406078 /* KaizenGamingChallengeTests */,
+				0F0433112BF7CC4300406078 /* KaizenGamingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F0432F02BF7CC3E00406078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0433022BF7CC4300406078 /* LaunchScreen.storyboard in Resources */,
+				0F0432FF2BF7CC4300406078 /* Assets.xcassets in Resources */,
+				0F42B2B72BF9B0C700967F0C /* mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F0433062BF7CC4300406078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F0433102BF7CC4300406078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F0432EE2BF7CC3E00406078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F42B2B52BF9AFE200967F0C /* JSONModelFactory.swift in Sources */,
+				0F0433322BF7F37700406078 /* EventTableViewCell.swift in Sources */,
+				0F0432FA2BF7CC3E00406078 /* UpcomingEventsViewController.swift in Sources */,
+				0F0432F62BF7CC3E00406078 /* AppDelegate.swift in Sources */,
+				0F04332B2BF7D23300406078 /* SportNameHeaderView.swift in Sources */,
+				0F4DFCB92BF808E500033D09 /* EventCollectionViewCell.swift in Sources */,
+				0FB4DCDA2BF8D1D700A21104 /* TimerManager.swift in Sources */,
+				0F04332D2BF7DC9200406078 /* UpcomingEventsPresenter.swift in Sources */,
+				0F0433302BF7E7BA00406078 /* Array+Extension.swift in Sources */,
+				0F0432F82BF7CC3E00406078 /* SceneDelegate.swift in Sources */,
+				0F4DFCBF2BF816BA00033D09 /* EventListModel.swift in Sources */,
+				0F0433282BF7CF9000406078 /* ViewCode.swift in Sources */,
+				0F4DFCC32BF84AD000033D09 /* EventModel.swift in Sources */,
+				0F4DFCBB2BF8138A00033D09 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F0433042BF7CC4300406078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F04330D2BF7CC4300406078 /* KaizenGamingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F04330E2BF7CC4300406078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0433172BF7CC4300406078 /* KaizenGamingChallengeUITests.swift in Sources */,
+				0F0433192BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F04330A2BF7CC4300406078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F0432F12BF7CC3E00406078 /* KaizenGamingChallenge */;
+			targetProxy = 0F0433092BF7CC4300406078 /* PBXContainerItemProxy */;
+		};
+		0F0433142BF7CC4300406078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F0432F12BF7CC3E00406078 /* KaizenGamingChallenge */;
+			targetProxy = 0F0433132BF7CC4300406078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F0433002BF7CC4300406078 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F0433012BF7CC4300406078 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F04331A2BF7CC4300406078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F04331B2BF7CC4300406078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F04331D2BF7CC4300406078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KaizenGamingChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luanCabral.KaizenGamingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0F04331E2BF7CC4300406078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KaizenGamingChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luanCabral.KaizenGamingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0F0433202BF7CC4300406078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luanCabral.KaizenGamingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaizenGamingChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KaizenGamingChallenge";
+			};
+			name = Debug;
+		};
+		0F0433212BF7CC4300406078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luanCabral.KaizenGamingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaizenGamingChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KaizenGamingChallenge";
+			};
+			name = Release;
+		};
+		0F0433232BF7CC4300406078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luanCabral.KaizenGamingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KaizenGamingChallenge;
+			};
+			name = Debug;
+		};
+		0F0433242BF7CC4300406078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = luanCabral.KaizenGamingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KaizenGamingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F0432ED2BF7CC3E00406078 /* Build configuration list for PBXProject "KaizenGamingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F04331A2BF7CC4300406078 /* Debug */,
+				0F04331B2BF7CC4300406078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F04331C2BF7CC4300406078 /* Build configuration list for PBXNativeTarget "KaizenGamingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F04331D2BF7CC4300406078 /* Debug */,
+				0F04331E2BF7CC4300406078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F04331F2BF7CC4300406078 /* Build configuration list for PBXNativeTarget "KaizenGamingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0433202BF7CC4300406078 /* Debug */,
+				0F0433212BF7CC4300406078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F0433222BF7CC4300406078 /* Build configuration list for PBXNativeTarget "KaizenGamingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0433232BF7CC4300406078 /* Debug */,
+				0F0433242BF7CC4300406078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F0432EA2BF7CC3E00406078 /* Project object */;
+}
