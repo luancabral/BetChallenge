@@ -22,6 +22,7 @@ final class UpcomingEventsViewController: BaseViewController {
         tv.sectionFooterHeight = 0
         tv.separatorStyle = .none
         tv.backgroundColor = .primary
+        tv.accessibilityIdentifier = "upcomingEventsTableView"
         tv.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 15.0, *) {
             tv.sectionHeaderTopPadding = 0

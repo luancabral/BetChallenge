@@ -14,7 +14,6 @@
 		0F0432FF2BF7CC4300406078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0432FE2BF7CC4300406078 /* Assets.xcassets */; };
 		0F0433022BF7CC4300406078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0433002BF7CC4300406078 /* LaunchScreen.storyboard */; };
 		0F0433172BF7CC4300406078 /* KaizenGamingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0433162BF7CC4300406078 /* KaizenGamingChallengeUITests.swift */; };
-		0F0433192BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0433182BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift */; };
 		0F0433282BF7CF9000406078 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0433272BF7CF9000406078 /* ViewCode.swift */; };
 		0F04332B2BF7D23300406078 /* SportNameHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04332A2BF7D23300406078 /* SportNameHeaderView.swift */; };
 		0F04332D2BF7DC9200406078 /* UpcomingEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04332C2BF7DC9200406078 /* UpcomingEventsPresenter.swift */; };
@@ -72,7 +71,6 @@
 		0F0433082BF7CC4300406078 /* KaizenGamingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaizenGamingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0433122BF7CC4300406078 /* KaizenGamingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaizenGamingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0433162BF7CC4300406078 /* KaizenGamingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingChallengeUITests.swift; sourceTree = "<group>"; };
-		0F0433182BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0F0433272BF7CF9000406078 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		0F04332A2BF7D23300406078 /* SportNameHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportNameHeaderView.swift; sourceTree = "<group>"; };
 		0F04332C2BF7DC9200406078 /* UpcomingEventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsPresenter.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				0F0433162BF7CC4300406078 /* KaizenGamingChallengeUITests.swift */,
-				0F0433182BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift */,
 			);
 			path = KaizenGamingChallengeUITests;
 			sourceTree = "<group>";
@@ -607,7 +604,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F0433172BF7CC4300406078 /* KaizenGamingChallengeUITests.swift in Sources */,
-				0F0433192BF7CC4300406078 /* KaizenGamingChallengeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

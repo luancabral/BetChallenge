@@ -91,9 +91,6 @@ final class UpcomingEventsPresentTest: XCTestCase {
         
         XCTAssertEqual(presenter?.sortEventByFavorite(mockedArray), expectedArray)
     }
-    
-    
-    // MARK: - TableView Methods
 }
 
 extension UpcomingEventsPresentTest: UpcomingEventsViewProtocol {

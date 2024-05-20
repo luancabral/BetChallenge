@@ -24,6 +24,7 @@ final class EventTableViewCell: UITableViewCell {
         cv.showsVerticalScrollIndicator = false
         cv.showsHorizontalScrollIndicator = false
         cv.backgroundColor = .primary
+        cv.accessibilityIdentifier = "eventCollectionView"
         cv.translatesAutoresizingMaskIntoConstraints = false
         return cv
     }()
