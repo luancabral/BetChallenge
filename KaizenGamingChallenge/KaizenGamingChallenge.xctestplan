@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "0509D5B5-B8F4-4668-AD42-DDE7EBC29DB3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:KaizenGamingChallenge.xcodeproj",
+      "identifier" : "0F0432F12BF7CC3E00406078",
+      "name" : "KaizenGamingChallenge"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:KaizenGamingChallenge.xcodeproj",
+        "identifier" : "0F0433072BF7CC4300406078",
+        "name" : "KaizenGamingChallengeTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:KaizenGamingChallenge.xcodeproj",
+        "identifier" : "0F0433112BF7CC4300406078",
+        "name" : "KaizenGamingChallengeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

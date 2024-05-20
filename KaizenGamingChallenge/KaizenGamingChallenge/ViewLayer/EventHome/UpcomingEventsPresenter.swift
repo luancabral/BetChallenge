@@ -27,12 +27,13 @@ protocol UpcomingEventsPresenterProtocol: AnyObject {
 final class UpcomingEventsPresenter: UpcomingEventsPresenterProtocol {
     weak var view: UpcomingEventsViewProtocol?
     
-    var model: AllEventsModel?
-    var service: UpcomingEventsServiceProtocol
-    var sections: [Sections] = []
+    private(set) var model: AllEventsModel?
+    private(set) var sections: [Sections] = []
+    private var service: UpcomingEventsServiceProtocol
     
-    init(service: UpcomingEventsServiceProtocol) {
+    init(service: UpcomingEventsServiceProtocol, _ model: AllEventsModel? = nil) {
         self.service = service
+        self.model = model
     }
     
     func fetchContent() {
@@ -64,7 +65,7 @@ final class UpcomingEventsPresenter: UpcomingEventsPresenterProtocol {
     }
     
     func toggleFavorite(_ activeEvent: EventModel) {
-        let defaults = UserDefaultManager()
+        let defaults = UserDefaultManager(keyName: "favoriteEvents")
         if activeEvent.isFavorite {
             defaults.remove(an: activeEvent.eventId)
         } else {

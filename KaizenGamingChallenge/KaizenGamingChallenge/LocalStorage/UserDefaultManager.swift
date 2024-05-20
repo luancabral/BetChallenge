@@ -8,20 +8,26 @@
 import Foundation
 
 final class UserDefaultManager {
-    private let defaults = UserDefaults.standard
-    private let favKey = "favoriteEvents"
+    private let defaults: UserDefaults
+    private let keyName: String
+    
+    init(defaults: UserDefaults = UserDefaults.standard, keyName: String) {
+        self.defaults = defaults
+        self.keyName = keyName
+        
+    }
     
     func save(items: [String]) {
-        defaults.set(items, forKey: favKey)
+        defaults.set(items, forKey: keyName)
     }
     
     func load() -> [String]? {
-        return defaults.array(forKey: favKey) as? [String]
+        return defaults.array(forKey: keyName) as? [String]
     }
     
     func update(with newElement: String) {
         var aux = [String]()
-        if let savedContent = defaults.array(forKey: favKey) as? [String] {
+        if let savedContent = defaults.array(forKey: keyName) as? [String] {
             aux = savedContent
         }
         aux.append(newElement)

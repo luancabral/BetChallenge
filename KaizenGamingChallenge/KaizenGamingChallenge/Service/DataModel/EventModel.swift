@@ -14,7 +14,7 @@ struct EventModel: Codable {
     let startTime: Int
     
     var isFavorite: Bool {
-        let defaults = UserDefaultManager()
+        let defaults = UserDefaultManager(keyName: "favoriteEvents")
         return defaults.hasSome(element: eventId)
     }
     
