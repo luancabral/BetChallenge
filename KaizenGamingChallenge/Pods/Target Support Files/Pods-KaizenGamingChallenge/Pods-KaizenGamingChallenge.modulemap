@@ -1,6 +1,0 @@
-framework module Pods_KaizenGamingChallenge {
-  umbrella header "Pods-KaizenGamingChallenge-umbrella.h"
-
-  export *
-  module * { export * }
-}
