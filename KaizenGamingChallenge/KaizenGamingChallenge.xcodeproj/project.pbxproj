@@ -186,12 +186,10 @@
 		0F0433252BF7CD7000406078 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				0F5FCA462BFC3AE2006A16EB /* Core */,
 				0F04332E2BF7E7A900406078 /* Extensions */,
 				0F0433262BF7CF7F00406078 /* Commons */,
 				0F0432FE2BF7CC4300406078 /* Assets.xcassets */,
-				0F0433002BF7CC4300406078 /* LaunchScreen.storyboard */,
-				0F0432F52BF7CC3E00406078 /* AppDelegate.swift */,
-				0F0432F72BF7CC3E00406078 /* SceneDelegate.swift */,
 				0FB4DCD92BF8D1D700A21104 /* TimerManager.swift */,
 				0F42B2B42BF9AFE200967F0C /* JSONModelFactory.swift */,
 			);
@@ -290,6 +288,16 @@
 				0F4DFCC22BF84AD000033D09 /* EventModel.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		0F5FCA462BFC3AE2006A16EB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0F0433002BF7CC4300406078 /* LaunchScreen.storyboard */,
+				0F0432F52BF7CC3E00406078 /* AppDelegate.swift */,
+				0F0432F72BF7CC3E00406078 /* SceneDelegate.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		0FCB7E9B2BFBDB8E002018DA /* UpcomingEvents */ = {
