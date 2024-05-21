@@ -199,7 +199,6 @@
 		0F0433262BF7CF7F00406078 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				0F4B8F352BFAD94500EB8920 /* BaseNavigationController.swift */,
 				0F0433272BF7CF9000406078 /* ViewCode.swift */,
 			);
 			path = Commons;
@@ -267,6 +266,7 @@
 		0F4B8F3E2BFAF2A300EB8920 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				0F4B8F352BFAD94500EB8920 /* BaseNavigationController.swift */,
 				0F4B8F3C2BFAF29F00EB8920 /* BaseViewController.swift */,
 			);
 			path = BaseClass;
