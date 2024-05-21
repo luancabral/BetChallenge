@@ -19,14 +19,14 @@ final class EventTableViewCell: UITableViewCell {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 135, height: 135)
-        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.register(EventCollectionViewCell.self, forCellWithReuseIdentifier: EventCollectionViewCell.identifier)
-        cv.showsVerticalScrollIndicator = false
-        cv.showsHorizontalScrollIndicator = false
-        cv.backgroundColor = .primary
-        cv.accessibilityIdentifier = "eventCollectionView"
-        cv.translatesAutoresizingMaskIntoConstraints = false
-        return cv
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(EventCollectionViewCell.self, forCellWithReuseIdentifier: EventCollectionViewCell.identifier)
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.backgroundColor = .primary
+        collectionView.accessibilityIdentifier = "eventCollectionView"
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        return collectionView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -58,7 +58,8 @@ extension EventTableViewCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCollectionViewCell.identifier, for: indexPath) as? EventCollectionViewCell,
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCollectionViewCell.identifier,
+                                                            for: indexPath) as? EventCollectionViewCell,
               let event = self.activeEvents[safe: indexPath.row] else { return .init() }
         cell.setup(activeEvent: event)
         cell.delegate = self.collectionDelegate

@@ -38,6 +38,8 @@
 		0FCB7EA02BFBDC01002018DA /* UpComingEventsServiceDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB7E9F2BFBDC01002018DA /* UpComingEventsServiceDummy.swift */; };
 		0FCB7EA22BFBDC6D002018DA /* UpComingEventsServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB7EA12BFBDC6D002018DA /* UpComingEventsServiceStub.swift */; };
 		0FCB7EA82BFBE816002018DA /* EventModel+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB7EA72BFBE816002018DA /* EventModel+Equatable.swift */; };
+		5C6901D5D2F23F7A0DE7AB25 /* Pods_KaizenGamingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310064669C116EFB1804D30C /* Pods_KaizenGamingChallenge.framework */; };
+		CDEEEFC9A9432A74B7D6ED52 /* Pods_KaizenGamingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C7F1A82AC420FD7034050 /* Pods_KaizenGamingChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		0FCB7E9F2BFBDC01002018DA /* UpComingEventsServiceDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingEventsServiceDummy.swift; sourceTree = "<group>"; };
 		0FCB7EA12BFBDC6D002018DA /* UpComingEventsServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingEventsServiceStub.swift; sourceTree = "<group>"; };
 		0FCB7EA72BFBE816002018DA /* EventModel+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventModel+Equatable.swift"; sourceTree = "<group>"; };
+		310064669C116EFB1804D30C /* Pods_KaizenGamingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaizenGamingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4C7F1A82AC420FD7034050 /* Pods_KaizenGamingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaizenGamingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC2CD8DE4C406C468CA5C92 /* Pods-KaizenGamingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-KaizenGamingChallengeTests/Pods-KaizenGamingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3403721825CDF9191CB8B3D /* Pods-KaizenGamingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingChallenge.release.xcconfig"; path = "Target Support Files/Pods-KaizenGamingChallenge/Pods-KaizenGamingChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		E4E8F139AA1A222EF694DEB7 /* Pods-KaizenGamingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-KaizenGamingChallengeTests/Pods-KaizenGamingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6901D5D2F23F7A0DE7AB25 /* Pods_KaizenGamingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEEEFC9A9432A74B7D6ED52 /* Pods_KaizenGamingChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +336,8 @@
 		A47D21B0154576065AD0AF28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				310064669C116EFB1804D30C /* Pods_KaizenGamingChallenge.framework */,
+				4C4C7F1A82AC420FD7034050 /* Pods_KaizenGamingChallengeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,6 +365,7 @@
 				0F0432EF2BF7CC3E00406078 /* Frameworks */,
 				0F0432F02BF7CC3E00406078 /* Resources */,
 				A483E08333C9CE11AF6803E0 /* [CP] Embed Pods Frameworks */,
+				0F0BFFF72BFC55BA00C401D1 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -477,6 +486,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F0BFFF72BFC55BA00C401D1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
 		44D4D9CFB00F6BB6DD686CFA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

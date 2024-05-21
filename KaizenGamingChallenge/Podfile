@@ -4,10 +4,12 @@ platform :ios, '13.0'
 target 'KaizenGamingChallenge' do
   use_frameworks!
   pod 'Alamofire', '5.9.1'
+  pod 'SwiftLint', '0.55.1'
 
   target 'KaizenGamingChallengeTests' do
     inherit! :search_paths
     pod 'Alamofire', '5.9.1'
+    pod 'SwiftLint', '0.55.1'
   end
 
 end

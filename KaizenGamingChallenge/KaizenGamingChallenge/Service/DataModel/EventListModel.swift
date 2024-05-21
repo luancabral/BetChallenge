@@ -19,11 +19,4 @@ struct EventDetailsModel: Codable {
         case activeEvents = "e"
         case sportId = "i"
     }
-    
-    static func makeMock() -> AllEventsModel? {
-        return try? JSONModelFactory.makeModel(AllEventsModel.self, fromJSON: "mock")
-    }
 }
-
-
-

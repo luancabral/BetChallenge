@@ -60,8 +60,8 @@ final class UpcomingEventsPresenter: UpcomingEventsPresenterProtocol {
     }
     
     func sortEventByFavorite(_ activeEvents: [EventModel]) -> [EventModel] {
-        let startTimeSort = activeEvents.sorted{ $0.startTime < $1.startTime}
-        return startTimeSort.sorted{ $0.isFavorite && !$1.isFavorite }
+        let startTimeSort = activeEvents.sorted { $0.startTime < $1.startTime}
+        return startTimeSort.sorted { $0.isFavorite && !$1.isFavorite }
     }
     
     func toggleFavorite(_ activeEvent: EventModel) {

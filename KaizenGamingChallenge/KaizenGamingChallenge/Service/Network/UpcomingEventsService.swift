@@ -7,7 +7,6 @@
 
 import Alamofire
 
-
 protocol UpcomingEventsServiceProtocol {
     func fetchUpcomingEvents(completion: @escaping (Result<AllEventsModel, ServiceError>) -> Void)
 }

@@ -18,16 +18,16 @@ final class UpcomingEventsViewController: BaseViewController {
     var presenter: UpcomingEventsPresenterProtocol
  
     private let tableView: UITableView = {
-        let tv = UITableView(frame: .zero, style: .grouped)
-        tv.sectionFooterHeight = 0
-        tv.separatorStyle = .none
-        tv.backgroundColor = .primary
-        tv.accessibilityIdentifier = "upcomingEventsTableView"
-        tv.translatesAutoresizingMaskIntoConstraints = false
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.sectionFooterHeight = 0
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .primary
+        tableView.accessibilityIdentifier = "upcomingEventsTableView"
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         if #available(iOS 15.0, *) {
-            tv.sectionHeaderTopPadding = 0
+            tableView.sectionHeaderTopPadding = 0
         }
-        return tv
+        return tableView
     }()
     
     init(presenter: UpcomingEventsPresenterProtocol) {
@@ -72,7 +72,8 @@ extension UpcomingEventsViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier, for: indexPath) as? EventTableViewCell,
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier,
+                                                       for: indexPath) as? EventTableViewCell,
               let section = presenter.sections[safe: indexPath.section],
               case let .sportSection(content, _) = section else { return .init() }
         let sortedEvents = presenter.sortEventByFavorite(content.activeEvents)
@@ -160,7 +161,7 @@ extension UpcomingEventsViewController {
     }
 }
 
-//MARK: - PullToRefreshProtocol
+// MARK: - PullToRefreshProtocol
 extension UpcomingEventsViewController: PullToRefreshProtocol {
     func pullToRefreshAction() {
         presenter.fetchContent()

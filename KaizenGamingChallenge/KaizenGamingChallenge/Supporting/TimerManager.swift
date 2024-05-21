@@ -18,7 +18,7 @@ final class TimerManager {
     }
     
     func startCountDown(completion: @escaping (String?) -> Void) {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: {[weak self] timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { [weak self] _ in
             guard let self = self else { return }
             updateTime(sender: self.targetDate)
             completion(remaningTime)
@@ -39,7 +39,6 @@ final class TimerManager {
         
         let timeLeft = userCalendar.dateComponents([.hour, .minute, .second], from: currentDate, to: targetDate)
         
-    
         remaningTime = getRemainingTime(with: timeLeft)
         endEvent(currentDate: currentDate, eventdate: eventDate)
     }

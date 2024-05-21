@@ -1,0 +1,13 @@
+included:
+ - KaizenGamingChallenge
+
+excluded:
+- Pods
+
+force_cast: warning
+
+disabled_rules:
+- trailing_whitespace
+- void_function_in_ternary
+
+line_length: 140
