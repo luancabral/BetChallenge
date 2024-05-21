@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05E9B8FD4BCAD0478895BE9D /* Pods_KaizenGamingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E87E0E410553897C950E90F /* Pods_KaizenGamingChallengeTests.framework */; };
 		0F0432F62BF7CC3E00406078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0432F52BF7CC3E00406078 /* AppDelegate.swift */; };
 		0F0432F82BF7CC3E00406078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0432F72BF7CC3E00406078 /* SceneDelegate.swift */; };
 		0F0432FA2BF7CC3E00406078 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0432F92BF7CC3E00406078 /* UpcomingEventsViewController.swift */; };
@@ -39,7 +38,6 @@
 		0FCB7EA02BFBDC01002018DA /* UpComingEventsServiceDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB7E9F2BFBDC01002018DA /* UpComingEventsServiceDummy.swift */; };
 		0FCB7EA22BFBDC6D002018DA /* UpComingEventsServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB7EA12BFBDC6D002018DA /* UpComingEventsServiceStub.swift */; };
 		0FCB7EA82BFBE816002018DA /* EventModel+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB7EA72BFBE816002018DA /* EventModel+Equatable.swift */; };
-		313E1A0E4D5C9C7552EF9520 /* Pods_KaizenGamingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA2E05AE6C9132DB822787F /* Pods_KaizenGamingChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,8 +94,6 @@
 		0FCB7E9F2BFBDC01002018DA /* UpComingEventsServiceDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingEventsServiceDummy.swift; sourceTree = "<group>"; };
 		0FCB7EA12BFBDC6D002018DA /* UpComingEventsServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingEventsServiceStub.swift; sourceTree = "<group>"; };
 		0FCB7EA72BFBE816002018DA /* EventModel+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventModel+Equatable.swift"; sourceTree = "<group>"; };
-		1DA2E05AE6C9132DB822787F /* Pods_KaizenGamingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaizenGamingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E87E0E410553897C950E90F /* Pods_KaizenGamingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaizenGamingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC2CD8DE4C406C468CA5C92 /* Pods-KaizenGamingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-KaizenGamingChallengeTests/Pods-KaizenGamingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3403721825CDF9191CB8B3D /* Pods-KaizenGamingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingChallenge.release.xcconfig"; path = "Target Support Files/Pods-KaizenGamingChallenge/Pods-KaizenGamingChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		E4E8F139AA1A222EF694DEB7 /* Pods-KaizenGamingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-KaizenGamingChallengeTests/Pods-KaizenGamingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				313E1A0E4D5C9C7552EF9520 /* Pods_KaizenGamingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05E9B8FD4BCAD0478895BE9D /* Pods_KaizenGamingChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +330,6 @@
 		A47D21B0154576065AD0AF28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DA2E05AE6C9132DB822787F /* Pods_KaizenGamingChallenge.framework */,
-				3E87E0E410553897C950E90F /* Pods_KaizenGamingChallengeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
